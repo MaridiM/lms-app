@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./src/shared/assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "mobile",
     "splash": {
       "image": "./src/shared/assets/splash.png",
       "resizeMode": "contain",
@@ -22,6 +23,9 @@
     },
     "web": {
       "favicon": "./src/shared/assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
