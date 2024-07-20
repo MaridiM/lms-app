@@ -1,4 +1,4 @@
-import { OnBoardingScreen } from 'screens/OnBoardingScreen'
+import { OnBoardingScreen } from '@/screens'
 import { FC } from 'react'
 
 interface IProps {}

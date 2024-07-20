@@ -4,15 +4,14 @@
         "strict": true,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./*"],
-            "*": ["./src/*"],
-            "app": ["./src/app/*"],
-            "screens/*": ["./src/screens/*"],
-            "features/*": ["./src/features/*"],
-            "widgets/*": ["./src/widgets/*"],
-            "entities/*": ["./src/entities/*"],
-            "shared/*": ["./src/shared/*"],
-            "types/*": ["./src/types/*"],
+            "@/*": ["./src/*"],
+            "@/app/*": ["./src/app/*"],
+            "@/screens/*": ["./src/screens/*"],
+            "@/features/*": ["./src/features/*"],
+            "@/widgets/*": ["./src/widgets/*"],
+            "@/entities/*": ["./src/entities/*"],
+            "@/shared/*": ["./src/shared/*"],
+            "@/types/*": ["./src/types/*"]
         }
     }
 }
