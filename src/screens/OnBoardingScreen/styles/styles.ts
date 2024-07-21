@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         width: wp('23%'),
         height: hp('10%')
     },
-    shape3: {
+    shape1: {
         position: 'absolute',
         left: -28,
         top: -20
@@ -18,5 +18,17 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         right: -40,
         top: -20
-    }
+    },
+    shape3: {
+        position: 'absolute',
+        left: 60
+    },
+    text: {
+        fontSize: hp('4%'),
+        lineHeight: hp('5%')
+    },
+    descriptionText: {
+        fontSize: hp('2%'),
+        lineHeight: hp('3%')
+    },
 })

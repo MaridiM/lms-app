@@ -1,1 +1,2 @@
-export { useColors } from './useColors.hook'
+export { useColors } from './useColors'
+export { useColorScheme } from './useColorScheme'

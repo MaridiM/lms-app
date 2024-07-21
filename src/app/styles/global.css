@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-    .example {
-        @apply items-center mt-[50px] bg-red-400;
-    }
-} */
+@layer base {
+  :root {
+    --primary: #2467EC;
+    --primary-foreground: #fafafa;
+  }
+
+  .dark:root {
+    --primary: #2467EC;
+    --primary-foreground: #16181b;
+  }
+}
