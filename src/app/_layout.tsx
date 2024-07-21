@@ -1,7 +1,7 @@
 
 import * as SplashScreen from "expo-splash-screen"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 
-import OnBoarding from './(router)/onboarding'
 import { StatusBar } from 'expo-status-bar'
 import { useEffect, useState } from 'react'
 import { Text, View } from 'react-native'
@@ -10,11 +10,12 @@ import { Theme, ThemeProvider } from '@react-navigation/native'
 import { Platform } from 'react-native'
 import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito"
 import { Raleway_100Thin, Raleway_400Regular, Raleway_700Bold } from "@expo-google-fonts/raleway"
+import { useColorScheme } from "@/shared/libs/hooks"
+import { NAV_THEME } from "@/shared/libs/constants"
+import { Stack } from "expo-router"
+import { paths } from "@/shared/config/routes"
 
 import "./styles/global.css"
-import { useColorScheme } from "@/shared/libs/hooks"
-import AsyncStorage from "@react-native-async-storage/async-storage"
-import { NAV_THEME } from "@/shared/libs/constants"
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -88,7 +89,10 @@ export default function RootLayout() {
                             <Text className="text-center text-2xl font-raleway-bold">Logged In</Text>
                         </View>
                     ) : (
-                        <OnBoarding />
+                        <Stack screenOptions={{headerShown: false}}>
+                            <Stack.Screen name={paths.default}/>    
+                            <Stack.Screen name={paths.welcomeIntro('index')}/>    
+                        </Stack>
                     )
                 }
             </View>

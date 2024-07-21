@@ -5,6 +5,8 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { useColors } from '@/shared/libs/hooks'
 import { styles } from '../styles/styles'
 import { Button, Text } from '@/shared/ui'
+import { router } from 'expo-router'
+import { paths } from '@/shared/config/routes'
 
 interface IProps {}
 
@@ -70,9 +72,10 @@ const OnBoardingScreen: FC<IProps> = ({}) => {
                 </View>
 
                 <Button
-                    className='mt-[30px]'
+                    className='mt-[40px]'
                     size='lg'
                     width='92%'
+                    onPress={() => router.push(paths.welcomeIntro())}
                 >
                     <Text className='font-nunito'>Getting Starting</Text>
                 </Button>
