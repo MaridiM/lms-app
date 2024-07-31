@@ -1,14 +1,8 @@
-import { Text, View } from 'react-native'
+import { WelcomeIntroScreen } from '@/screens'
 import { FC } from 'react'
 
 interface IProps {}
 
-const WelcomeIntro: FC<IProps> = ({}) => {
-    return (
-        <View>
-            <Text>Welcome Into App!</Text>
-        </View>
-    )
-}
+const WelcomeIntro: FC<IProps> = ({}) => <WelcomeIntroScreen />
 
 export default WelcomeIntro

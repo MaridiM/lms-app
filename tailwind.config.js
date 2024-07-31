@@ -16,10 +16,26 @@ module.exports = {
                 'nunito-bold': ['Nunito_700Bold'],
             },
             colors: {
+                background: {
+                    DEFAULT: 'hsl(var(--background))',
+                },
                 primary: {
                     DEFAULT: 'hsl(var(--primary))',
                     foreground: 'hsl(var(--primary-foreground))',
                 },
+                error: {
+                    DEFAULT: 'hsl(var(--error))',
+                },
+                dot: {
+                    DEFAULT: 'hsl(var(--dot))',
+                    hover: 'hsl(var(--dot-active))',
+                },
+                font: {
+                    DEFAULT: 'hsl(var(--font-color))',
+                    description: 'hsl(var(--font-color-description))',
+                    placeholder: 'hsl(var(--font-color-placeholder))',
+                    error: 'hsl(var(--font-color-error))',
+                }
             },
             borderWidth: {
                 hairline: hairlineWidth(),

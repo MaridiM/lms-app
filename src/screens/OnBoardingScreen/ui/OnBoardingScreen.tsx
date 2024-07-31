@@ -34,7 +34,7 @@ const OnBoardingScreen: FC<IProps> = ({}) => {
                         style={styles.shape1}
                     />
                     <Text
-                        className={cn('text-center font-raleway-bold')}
+                        className={cn('text-center font-raleway-bold text-font')}
                         style={styles.text}
                     >
                         Start Learning With
@@ -50,7 +50,7 @@ const OnBoardingScreen: FC<IProps> = ({}) => {
                         style={styles.shape3}
                     />
                     <Text
-                        className='text-center text-3xl font-raleway-bold'
+                        className='text-center text-3xl font-raleway-bold text-font'
                         style={styles.text}
                     >
                         Becodemy
@@ -58,13 +58,13 @@ const OnBoardingScreen: FC<IProps> = ({}) => {
                 </View>
                 <View className='mt-[30px]'>
                     <Text
-                        className='text-center font-nunito text-[#575757]'
+                        className='text-center font-nunito text-font-description'
                         style={styles.descriptionText}
                     >
                         Explore a variety of interactive lessons,
                     </Text>
                     <Text
-                        className='text-center font-nunito text-[#575757]'
+                        className='text-center font-nunito text-font-description'
                         style={styles.descriptionText}
                     >
                         video, quizze & assignment.
@@ -72,6 +72,7 @@ const OnBoardingScreen: FC<IProps> = ({}) => {
                 </View>
 
                 <Button
+                    variant='primary'
                     className='mt-[40px]'
                     size='lg'
                     width='92%'

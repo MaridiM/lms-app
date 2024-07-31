@@ -2,11 +2,11 @@
   "expo": {
     "name": "mobile",
     "slug": "mobile",
+    "scheme": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/shared/assets/images/icon.png",
     "userInterfaceStyle": "light",
-    "scheme": "mobile",
     "splash": {
       "image": "./src/shared/assets/images/splash.png",
       "resizeMode": "contain",

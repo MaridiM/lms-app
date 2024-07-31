@@ -92,6 +92,7 @@ export default function RootLayout() {
                         <Stack screenOptions={{headerShown: false}}>
                             <Stack.Screen name={paths.default}/>    
                             <Stack.Screen name={paths.welcomeIntro('index')}/>    
+                            <Stack.Screen name={paths.login('index')}/>    
                         </Stack>
                     )
                 }

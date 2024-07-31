@@ -6,4 +6,4 @@ import {
 
 export const createWidthStyle = (width: string) => ({
     width: wp(width),
-});
+})

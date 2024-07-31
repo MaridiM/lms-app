@@ -4,12 +4,32 @@
 
 @layer base {
   :root {
+    --background: #ffffff;
+
     --primary: #2467EC;
     --primary-foreground: #fafafa;
-  }
+    --error: #d40000;
 
+    --font-color: #222222;
+    --font-color-description: #575757;
+    --font-color-placeholder: #a8a8a8;
+    --font-color-error: ##d40000;
+    
+    --dot: #C6C7CC;
+    --dot-active: #2467Ec;
+  }
+  
   .dark:root {
+    --background: #222222;
+    
     --primary: #2467EC;
     --primary-foreground: #16181b;
+    
+    --font-color: #fefefe;
+    --font-color-description: #9b9b9b;
+    --font-color-placeholder: #585757;
+
+    --dot: #C6C7CC;
+    --dot-active: #2467Ec;
   }
 }

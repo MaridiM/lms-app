@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import { ElementRef, forwardRef } from 'react';
 import { Pressable } from 'react-native';
 import { TextClassContext } from '../Text';
 import { cn } from '@/shared/libs/utils';
@@ -6,11 +6,11 @@ import { ButtonProps } from './types';
 import {
     buttonTextVariants,
     buttonVariants,
-    createWidthStyle,
     styles
 } from './styles';
+import { createWidthStyle } from '@/shared/libs/helpers';
 
-const Button = forwardRef<React.ElementRef<typeof Pressable>, ButtonProps>(
+const Button = forwardRef<ElementRef<typeof Pressable>, ButtonProps>(
     ({ className, variant, size, fill, width, ...props }, ref) => {
         const dynamicWidthStyle = width ? createWidthStyle(width)  : {};
         return (

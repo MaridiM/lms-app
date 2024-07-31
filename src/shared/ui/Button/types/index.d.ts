@@ -8,4 +8,4 @@ export interface IProps {
     width?: string
 }
 
-export type ButtonProps = React.ComponentPropsWithoutRef<typeof Pressable> & VariantProps<typeof buttonVariants> & IProps;
+export type ButtonProps = ComponentPropsWithoutRef<typeof Pressable> & VariantProps<typeof buttonVariants> & IProps;
