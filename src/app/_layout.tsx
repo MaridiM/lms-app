@@ -93,6 +93,8 @@ export default function RootLayout() {
                             <Stack.Screen name={paths.default}/>    
                             <Stack.Screen name={paths.welcomeIntro('index')}/>    
                             <Stack.Screen name={paths.login('index')}/>    
+                            <Stack.Screen name={paths.signup('index')}/>    
+                            <Stack.Screen name={paths.forgotPassword('index')}/>    
                         </Stack>
                     )
                 }

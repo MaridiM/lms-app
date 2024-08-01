@@ -16,6 +16,7 @@ import { cn } from '@/shared/libs/utils'
 import { Link, router } from 'expo-router'
 import { paths } from '@/shared/config/routes'
 import { ActivityIndicator } from 'react-native'
+import TouchableOpacity from '@/shared/ui/TouchableOpacity/ui/TouchableOpacity'
 
 interface IProps {}
 
@@ -119,12 +120,12 @@ const LoginScreen: FC<IProps> = ({}) => {
                         </Button>
                     </View>
                     
-                    <Link
-                        href={paths.forgotPassword()}
-                        className='mx-4 text-right text-base mt-3'
+                    <TouchableOpacity
+                        onPress={() => router.push(paths.forgotPassword())}
+                        className='mx-4 text-base mt-4 self-end'
                     >
                         <Text className='font-nunito-bold'>Forgot Password?</Text>
-                    </Link>                    
+                    </TouchableOpacity>                    
                     
                     {
                         error.password && (
@@ -160,12 +161,12 @@ const LoginScreen: FC<IProps> = ({}) => {
 
                     <View className='flex-row justify-center my-5' >
                         <Text className='font-raleway-bold'>Don't have an account?</Text>
-                        <Link
-                            href={paths.signup()}
+                        <TouchableOpacity
+                            onPress={() => router.push(paths.signup())}
                             className='mx-4 ml-1 mt-[2px]'
                         >
                             <Text className='font-nunito-bold text-primary'>Sing Up</Text>
-                        </Link>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>
