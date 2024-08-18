@@ -1,0 +1,1 @@
+export { default as VerifyAccountScreen } from './ui/VerifyAccountScreen'

@@ -18,7 +18,7 @@ import { ActivityIndicator } from 'react-native'
 
 interface IProps {}
 
-const LoginScreen: FC<IProps> = ({}) => {
+const SignUpScreen: FC<IProps> = ({}) => {
     const [required, setRequired] = useState('')
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
     const [buttonSpinner, setButtonSpinner] = useState(false)
@@ -46,8 +46,9 @@ const LoginScreen: FC<IProps> = ({}) => {
         }
     }
 
-    const handleSignIn = () => {
-        console.log("SIGN IN")
+    const handleSignUp = () => {
+        console.log("SIGN UP")
+        router.push(paths.verifyAccount())
     }
 
     return ( 
@@ -57,13 +58,13 @@ const LoginScreen: FC<IProps> = ({}) => {
         >
             <ScrollView className='w-full pt-5'>
                 <Image
-                    source={require('@/shared/assets/sign-in/sign_in.png')}
-                    style={styles.signInImage}
+                    source={require('@/shared/assets/sign-in/signup.png')}
+                    style={styles.signUpImage}
                 />
 
-                <Text className='text-center text-2xl font-raleway-bold'>Welcome Back!</Text>
+                <Text className='text-center text-2xl font-raleway-bold'>Let's get started!</Text>
                 <Text className='text-center text-base font-raleway text-font-description'>
-                    Login to your existing account of Becodemy
+                   Create an account to Becodemy to get all features
                 </Text>
 
                 <View className='mx-4 mt-[30px] px-3' >
@@ -118,13 +119,6 @@ const LoginScreen: FC<IProps> = ({}) => {
                         </Button>
                     </View>
                     
-                    <TouchableOpacity
-                        onPress={() => router.push(paths.forgotPassword())}
-                        className='mx-4 text-base mt-4 self-end'
-                    >
-                        <Text className='font-nunito-bold'>Forgot Password?</Text>
-                    </TouchableOpacity>                    
-                    
                     {
                         error.password && (
                             <View className='flex-row items-center mx-3 absolute top-[125px]'>
@@ -137,7 +131,7 @@ const LoginScreen: FC<IProps> = ({}) => {
                     <Button
                         variant='primary'
                         className='mt-5'
-                        onPress={handleSignIn}
+                        onPress={handleSignUp}
                     >
                         {
                             buttonSpinner ? (
@@ -158,12 +152,12 @@ const LoginScreen: FC<IProps> = ({}) => {
                     </View>
 
                     <View className='flex-row justify-center my-5' >
-                        <Text className='font-raleway-bold'>Don't have an account?</Text>
+                        <Text className='font-raleway-bold'>I have an account?</Text>
                         <TouchableOpacity
-                            onPress={() => router.push(paths.signup())}
+                            onPress={() => router.push(paths.login())}
                             className='mx-4 ml-1 mt-[2px]'
                         >
-                            <Text className='font-nunito-bold text-primary'>Sing Up</Text>
+                            <Text className='font-nunito-bold text-primary'>Sing In</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -172,4 +166,4 @@ const LoginScreen: FC<IProps> = ({}) => {
     )
 }
 
-export default LoginScreen
+export default SignUpScreen

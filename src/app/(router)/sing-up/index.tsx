@@ -1,9 +1,8 @@
-import { View, Text } from 'react-native'
+import { FC } from 'react'
+import { SignUpScreen } from '@/screens'
 
-export default function SignUp () {
-    return (
-        <View>
-            <Text>SignUp</Text>
-        </View>
-    )
-}
+interface IProps {}
+
+const SignUp: FC<IProps> = ({}) => <SignUpScreen />
+
+export default SignUp

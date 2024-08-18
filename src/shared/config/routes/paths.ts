@@ -5,5 +5,6 @@ export const paths = {
     onboarding: (page?: string): string => `(router)/onboarding/${page || ''}`,
     welcomeIntro: (page?: string): string => `(router)/welcome-intro/${page || ''}`,
     forgotPassword: (page?: string): string => `(router)/forgot-password/${page || ''}`,
+    verifyAccount: (page?: string): string => `(router)/verify-account/${page || ''}`,
 
 }
