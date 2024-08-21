@@ -35,6 +35,9 @@ module.exports = {
                     description: 'hsl(var(--font-color-description))',
                     placeholder: 'hsl(var(--font-color-placeholder))',
                     error: 'hsl(var(--font-color-error))',
+                },
+                input: {
+                    DEFAULT: 'hsl(var(--input))',
                 }
             },
             borderWidth: {

@@ -17,6 +17,8 @@
     
     --dot: #C6C7CC;
     --dot-active: #2467Ec;
+
+    --input: #ddd
   }
   
   .dark:root {
@@ -28,8 +30,10 @@
     --font-color: #fefefe;
     --font-color-description: #9b9b9b;
     --font-color-placeholder: #585757;
-
+    
     --dot: #C6C7CC;
     --dot-active: #2467Ec;
+    
+    --input: #ddd
   }
 }
